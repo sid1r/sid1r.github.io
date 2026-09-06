@@ -1,0 +1,90 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\raggedbottom
+% User-updatable metadata (change these values for different users)
+\newcommand{\Name}{SIDRA RAHMAN}
+\newcommand{\Location}{Bengaluru, Karnataka}
+\newcommand{\Phone}{+91-9310213178}
+\newcommand{\Email}{sidrarahman01@gmail.com}
+\newcommand{\LinkedIn}{https://linkedin.com/in/sidrarahman19}
+\newcommand{\GitHub}{https://github.com/sid1r}
+% Helper for consistent repo links
+\newcommand{\Repo}[1]{\hspace{6pt}\href{#1}{\small[Repo]}}
+% Section formatting
+\renewcommand{\section}[1]{
+  \par\vspace{3pt}
+  {\large\textbf{#1}}
+  \vspace{2pt}
+  \hrule
+  \vspace{4pt}
+}
+% Balanced spacing
+\setlist[itemize]{topsep=1.5pt, itemsep=1.5pt, leftmargin=14pt}
+\parindent=0pt
+\parskip=0pt
+\begin{document}
+% Header (use the metadata commands above to update for different users)
+\begin{center}
+\textbf{\Large \Name} \\
+\vspace{1pt}
+\Location \\
+\vspace{1pt}
+\Phone \;|\; 
+\href{mailto:\Email}{\Email} \;|\; 
+\href{\LinkedIn}{\LinkedIn} \;|\; 
+\href{\GitHub}{\GitHub}
+\end{center}
+\vspace{2pt}
+% Summary
+\section{PROFESSIONAL SUMMARY}
+Computer Science (AI \& ML) student focused on backend systems and real-time applications, with hands-on experience building scalable architectures and ML-powered solutions. Developed projects involving NLP chatbots, real-time communication systems, and computer vision pipelines, with emphasis on performance and efficiency.
+% Education
+\section{EDUCATION}
+\textbf{KNS Institute of Technology, Bengaluru} \hfill Aug 2023 -- Aug 2027 (Expected) \\
+\textit{B.Tech in Computer Science \& Engineering (AI \& Machine Learning)} \\
+\textbf{CGPA:} 8.06/10 \\
+Coursework: Data Structures \& Algorithms, DBMS, Operating Systems, Machine Learning
+% Projects
+\section{PROJECTS}
+\textbf{Placement AI -- AI-Powered Placement Management System}\Repo{https://github.com/sid1r/placement_ai} \\
+\textit{Python, FastAPI, SQL, JWT, Git, GitHub, GitHub Actions}
+\begin{itemize}
+\item Developed a placement management platform with student profiles, resume management, authentication, and placement services
+\item Built a resume analysis module to extract resume text, identify skills, missing skills, and generate resume scores
+\item Implemented AI-based interview, company recommendation, and placement prediction modules to support student career decisions
+\item Used Git and GitHub for version control and GitHub Actions for CI/CD automation, including build and testing workflows
+\end{itemize}
+\vspace{2pt}
+\textbf{Real-Time Image Cartoonization}\Repo{https://github.com/sid1r/live-cartoon-cam} \\
+\textit{Python, PyTorch, OpenCV}
+\begin{itemize}
+\item Built a GAN-based pipeline for real-time image cartoonization
+\item Achieved near real-time inference using GPU acceleration
+\item Improved output quality through optimized preprocessing and model integration
+\end{itemize}
+\vspace{2pt}
+\textbf{LocalAI Commerce -- AI-Powered Local Shopping Platform}\Repo{https://github.com/sid1r/LocalAI_Commerce/tree/main} \\
+\textit{Python, FastAPI, SQLAlchemy, Gemini, Razorpay, HTML/CSS/JavaScript}
+\begin{itemize}
+\item Built an AI-powered shopping platform using a Gemini-based Buyer Agent to translate natural-language requests into recommendations grounded in real local inventory
+\item Developed merchant product/catalog workflows with FastAPI + SQLAlchemy, enabling products created by merchants to become searchable through the AI recommendation system
+\item Integrated Razorpay checkout and server-side payment verification, with a responsive vanilla JavaScript frontend covering discovery, product selection, ordering, and payments
+\end{itemize}
+% Skills
+\section{TECHNICAL SKILLS}
+\textbf{Languages:} Python, Java, C, JavaScript \\
+\textbf{Frameworks:} FastAPI, Node.js, React, Tailwind CSS \\
+\textbf{Query Languages:} SQL, NoSQL \\
+\textbf{Databases:} MongoDB, PostgreSQL, MySQL \\
+\textbf{Machine Learning \& Data:} NumPy, Pandas, scikit-learn \\
+\textbf{Core CS:} Data Structures \& Algorithms, OS, DBMS, Computer Networks \\
+\textbf{Tools:} Git, GitHub, Linux, Postman, Render
+\vspace{2pt}
+% Certifications
+\section{CERTIFICATIONS}
+Introduction to Generative AI — Google Cloud (2024) \;|\;
+AI Resume Screening with LangChain — Innomatics (2026) \;|\;
+DBMS Course — Scaler Topics (2025)
+\end{document}
